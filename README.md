@@ -1,4 +1,4 @@
-# (WIP) Safety Hazard Identification Using Visual–Text Semantic Similarity for Construction Safety Management
+# (WIP) ConDenseCap
 
 A prototype code repository for construction image dense captioning and safety hazard identification.
 
@@ -45,7 +45,7 @@ Please contact the authors of the following paper to obtain the images:
 
 ### Dense Captioning Labeling Data
 
-Please contact the authors of the following paper to obtain the images:
+Please contact the authors of this paper to obtain the images:
 
 ```
 place-holder-bibtex
@@ -65,7 +65,7 @@ In our experiments, we labelled the above dedicated dataset and named it "con_de
     └── VG-regions-lite.h5 (this file will be genreated by the pre-processing)
 ```
 
-You can also label your own data like the follwoing format.
+You can also label your own data like the following format.
 
 ```
 region_descriptions.json
@@ -77,7 +77,7 @@ region_descriptions.json
         "id": 0,
         "image_id": 1,
         "category": "worker",
-        "phrase": "the clock is green in colour",
+        "phrase": "worker doing some activity",
         "x": 100,
         "y": 100,
         "width": 200,
