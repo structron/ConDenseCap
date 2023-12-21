@@ -18,6 +18,7 @@ place-holder-bibtex
 - PyTorch 1.8.1
 - torchvision 0.9.1
 - spaCy
+- spacy-universal-sentence-encoder
 - pandas
 - numpy
 - PIL
