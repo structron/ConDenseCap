@@ -4,7 +4,7 @@ A prototype code repository for construction image dense captioning and safety h
 
 Yiheng Wang, Bo Xiao, Ahmed Bouferguene, Mohamed Al-Hussein
 
-Yiheng Wang : *yiheng6 [AT] ualberta [dot] ca* OR *yihengw [AT] hust [DOT] edu [dot] cn*
+Yiheng Wang : *yiheng6 [AT] ualberta [DOT] ca* OR *yihengw [AT] hust [DOT] edu [DOT] cn*
 
 If you use this code repository in your research or wish to refer to the baseline results published in this study, please cite this paper:
 
