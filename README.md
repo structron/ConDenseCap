@@ -4,7 +4,7 @@ A prototype code repository for construction image dense captioning and safety h
 
 Yiheng Wang, Bo Xiao, Ahmed Bouferguene, Mohamed Al-Hussein
 
-Yiheng Wang : yiheng6 [AT] ualberta [dot] ca OR yihengw [AT] hust [DOT] edu [dot] cn
+Yiheng Wang : *yiheng6 [AT] ualberta [dot] ca* OR *yihengw [AT] hust [DOT] edu [dot] cn*
 
 If you use this code repository in your research or wish to refer to the baseline results published in this study, please cite this paper:
 
@@ -28,7 +28,7 @@ place-holder-bibtex
 
 ## Data Preparation
 
-### Image Dataset
+### Image Data
 
 Please contact the authors of the following paper to obtain the images:
 
@@ -44,9 +44,9 @@ Please contact the authors of the following paper to obtain the images:
 }
 ```
 
-### Dense Captioning Labeling Data
+### Labeling Data
 
-Please contact the authors of this paper to obtain the images:
+Please contact the authors of this paper to obtain the label files:
 
 ```
 place-holder-bibtex
@@ -60,8 +60,9 @@ In our experiments, we labelled the above dedicated dataset and named it "con_de
  data
     ├── con_densecap
     │   ├── images (put the images in this folder)
-    │   ├── region_descriptions.json
-    │   └── image_data.json
+    │   ├── region_descriptions.json (regional captioning labeling)
+    │   ├── image_data.json (image information)
+    │   └── densecap_splits.json (train/val split)
     ├── VG-regions-dicts-lite.pkl (this file will be genreated by the pre-processing)
     └── VG-regions-lite.h5 (this file will be genreated by the pre-processing)
 ```
@@ -70,42 +71,33 @@ You can also label your own data like the following format.
 
 ```
 region_descriptions.json
-[
-  {
-    "image_id": 1,
-    "regions": [
-      {
-        "id": 0,
-        "image_id": 1,
-        "category": "worker",
-        "phrase": "worker doing some activity",
-        "x": 100,
-        "y": 100,
-        "width": 200,
-        "height": 300
-      },
-      ...
-    ]
-  }
-  ...
-]
+{
+  "id": [int], Unique identifier for this image,
+  "regions": [
+    {
+      "id": [int] Unique identifier for this region,
+      "height": [int] Height of the region in pixels,
+      "width": [int] Width of the region in pixels,
+      "x": [int] x-coordinate of the upper-left corner of the region,
+      "y": [int] y-coordinate of the upper-left corner of the region,
+      "category": [string] Optional classification of the object in this box,
+      "phrase": [string] Caption for this region,
+    },
+    ...
+  ]
+}
 ```
 
 ```
 image_data.json
-[
-  {
-    "image_id": 1,
-    "filename": "00001.jpg",
-    "width": 1920,
-    "height": 1080
-    ]
-    ...
+{
+    "image_id": [int] Unique identifier for this image,
+    "width": [int] Width of the image in pixels,
+    "height": [int] Height of the image in pixels,
+    "filename": [string] Filename of this image
   }
-  ...
-]
 ```
 
 ## Acknowledgement
 
-The captioning part is based upon https://github.com/soloist97/densecap-pytorch , most modifications are made about using torch.amp during training instead of using nvidia apex.
+The captioning part is based upon https://github.com/soloist97/densecap-pytorch , most modifications are made about data preprocessing and using `torch.amp` during training instead of using `nvidia apex`.
