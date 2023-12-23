@@ -1,12 +1,10 @@
-# (WIP) ConDenseCap
+# (Work-in-Progress) ConDenseCap
 
 A prototype code repository for construction image dense captioning and safety hazard identification.
 
 Yiheng Wang, Bo Xiao, Ahmed Bouferguene, Mohamed Al-Hussein
 
 Yiheng Wang : *yiheng6 [AT] ualberta [DOT] ca* OR *yihengw [AT] hust [DOT] edu [DOT] cn*
-
-If you use this code repository in your research or wish to refer to the baseline results published in this study, please cite this paper:
 
 ```
 place-holder-bibtex
@@ -25,6 +23,18 @@ place-holder-bibtex
 - h5py
 - tqdm
 - nlgeval: https://github.com/Maluuba/nlg-eval
+
+we recommend using docker to install the pytorch environment:
+
+```bash
+docker pull pytorch/pytorch:1.8.1-cuda11.1-cudnn8-devel
+#or
+docker pull pytorch/pytorch:1.10.0-cuda11.3-cudnn8-devel
+
+#then
+
+pip install spacy, pandas, [...]
+```
 
 ## Data Preparation
 
