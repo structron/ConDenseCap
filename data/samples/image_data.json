@@ -1,0 +1,20 @@
+[
+    {
+        "image_id": 3,
+        "file_name": "ori_3.jpg",
+        "width": 972,
+        "height": 972
+    },
+    {
+        "image_id": 8,
+        "file_name": "ori_8.jpg",
+        "width": 864,
+        "height": 864
+    },
+    {
+        "image_id": 9,
+        "file_name": "ori_9.jpg",
+        "width": 864,
+        "height": 864
+    }
+]
