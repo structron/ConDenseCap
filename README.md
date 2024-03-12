@@ -2,10 +2,6 @@
 
 A prototype code repository for construction image dense captioning and safety hazard identification.
 
-Yiheng Wang, Bo Xiao, Ahmed Bouferguene, Mohamed Al-Hussein
-
-Yiheng Wang : *yiheng6 [AT] ualberta [DOT] ca* OR *yihengw [AT] hust [DOT] edu [DOT] cn*
-
 ```
 place-holder-bibtex
 ```
