@@ -3,7 +3,10 @@
 A prototype code repository for construction image dense captioning and safety hazard identification.
 
 ```
-place-holder-bibtex
+Proactive safety hazard identification using visual–text semantic similarity
+for construction safety management
+
+https://doi.org/10.1016/j.autcon.2024.105602
 ```
 
 ## Requirements
